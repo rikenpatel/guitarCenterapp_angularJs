@@ -1,0 +1,77 @@
+<!-- Used Custom directive for navbar -->
+<nav-dir></nav-dir>
+
+<!-- Container for Images -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div>     <!-- style="border:1px solid white;" -->
+				<img class="img-responsive" src="{{data[i].image_path}}" style="width: auto;height: 300px;margin-left: 10%">	
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Container for Buttons -->
+<div class="container" style="margin-top: 2%">
+	<div class="row">
+		<div class="col-xs-2 col-sm-4 col-md-4 col-lg-5" style="margin-top: 5%"></div>
+		<!-- <div class=" col-xs-3 col-sm-4 col-md-5 col-lg-5"></div> -->
+		<div class="col-xs-4 col-sm-2 col-md-3 col-lg-1"><button class="btn btn-danger" ng-click="prevbtn()">Previous</button></div>
+		<!-- <div class="col-xs-3"></div> -->
+		<div class="col-xs-6 col-sm-4 col-md-4 col-lg-1"><button class="btn btn-danger" ng-click="nextbtn()">Next</button></div>
+		<div class="col-lg-5"></div>
+	</div>
+</div>
+<div class="container" style="margin-top: 1%">
+	<div class="row">
+		<!-- <div class="col-sm-4"></div> -->
+		<div class="col-xs-2 col-sm-4 col-md-5"></div>
+		<div class="col-xs-10 col-sm-4 col-md-2">
+			<div class="btn-group">
+	  			<button type="button" class="btn btn-primary dropdown-toggle glyphicon glyphicon-plus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;PRODUCT INFO
+	  			</button>
+	  			<div class="dropdown-menu">
+	    			<div>{{data[i].product_description}}</div>
+	    		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" style="margin-top: 2%">
+	<div class="row">
+		<div class="col-xs-2 col-sm-4 col-md-5"></div>
+		<div class="col-xs-10 col-sm-4 col-md-2">
+			<div class="btn-group">
+	  			<button type="button" class="btn btn-primary dropdown-toggle glyphicon glyphicon-plus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;SHIPPING INFO
+	  			</button>
+	  			<div class="dropdown-menu">
+	    			<p>{{data[i].shipping_details}}</p>
+	    		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" style="margin-top: 2%">
+	<div class="row">
+		<div class="col-xs-2 col-sm-4 col-md-5"></div>
+		<div class="col-xs-10 col-sm-4 col-md-2">
+			<div class="btn-group">
+	  			<button type="button" class="btn btn-primary dropdown-toggle glyphicon glyphicon-plus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;CUST. REVIEWS
+	  			</button>
+	  			<div class="dropdown-menu">
+	    			<p>{{data[i].customer_reviews}}</p>
+	    		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+	<div class="row">
+		<div class="col-xs-4 col-sm-5 col-md-5"></div>
+		<div class="col-xs-8 col-sm-4 col-md-2">
+			<button class="btn btn-danger" ng-click="buybtn()">BUY</button>
+		</div>
+	</div>
+</div>
+<!-- {{data}} -->

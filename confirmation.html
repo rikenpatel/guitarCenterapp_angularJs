@@ -1,0 +1,25 @@
+<!-- Used Custom directive for navbar -->
+<nav-dir></nav-dir>
+
+<!-- purchased final product image -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div>            <!-- style="border:1px solid white;" -->
+				<img class="img-responsive" src="{{b.image_path}}" style="width: auto;height: 300px;margin-left: 10%">	
+			</div>
+		</div>	
+	</div>
+</div>
+
+<!-- Confirmation detail -->
+<div class="container">
+	<div class="row">
+		<h2 class="purfonts">CONFIRMATION</h2>
+		<P class="err">{{b.product_description}}</P>
+		<p class="err">{{b.shipping_details}}</p>
+		<p class="err">{{b.price}}</p>
+
+		<button class="err" ng-click="homebtn()"><span class="purfonts">GO TO HOME</span></button>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+.menus{
+	color: red;
+	font-size: 20px;
+	text-shadow: 7px 7px 5px red;
+	padding: 0;
+	margin: 0;
+}
+.navbar-toggle:hover{
+	background-color: 1px solid black;
+}
+ul ul{
+	display: none;
+}
+ul li:hover ul{
+	display: block;
+	text-decoration: none;
+}
+.purdiv{
+	/*height: 300px;
+	width: 400px;*/
+	/*background-color: red;*/
+	/*margin-left: 1%;*/
+}
+.purfonts{
+	color: red;
+	margin-top: 1%;
+	text-shadow: 7px 7px 5px red;
+}
+body{
+	opacity: 50%;
+}
+.err{
+	color: white;
+}
+.leftside{
+	float: right;
+}
+.rightside{
+	float: left;
+}
+/*.ng-invalid{
+	border:1px solid red;
+}*/
